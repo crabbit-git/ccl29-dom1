@@ -15,9 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
   pinkDiv.classList.add('pink-div');
   container.appendChild(pinkDiv);
   const pinkDivHeader = document.createElement('h1');
+  pinkDivHeader.classList.add('inside-div');
   pinkDivHeader.textContent = 'I\'m in a div!';
   pinkDiv.appendChild(pinkDivHeader);
   pinkDivText = document.createElement('p');
+  pinkDivText.classList.add('inside-div');
   pinkDivText.textContent = 'Me too!';
   pinkDiv.appendChild(pinkDivText);
 });

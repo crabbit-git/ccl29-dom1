@@ -12,10 +12,6 @@
   padding: 2%;
 }
 
-div > h1 {
-  margin: 0;
-}
-
-div > p {
+.inside-div {
   margin: 0;
 }
