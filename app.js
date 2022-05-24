@@ -22,4 +22,18 @@ document.addEventListener('DOMContentLoaded', () => {
   pinkDivText.classList.add('inside-div');
   pinkDivText.textContent = 'Me too!';
   pinkDiv.appendChild(pinkDivText);
+
+  const favFoodDiv = document.createElement('div');
+  container.appendChild(favFoodDiv);
+  const favFoodHeading = document.createElement('h1');
+  favFoodHeading.textContent = 'My favourite foods!';
+  favFoodDiv.appendChild(favFoodHeading);
+  const favFoods = ['bibimbap', 'ramen', 'sushi'];
+  const favFoodList = document.createElement('ul');
+  for (const food of favFoods) {
+    const foodListItem = document.createElement('li');
+    foodListItem.textContent = food;
+    favFoodList.appendChild(foodListItem);
+  }
+  favFoodDiv.appendChild(favFoodList);
 });
