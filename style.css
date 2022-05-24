@@ -7,6 +7,15 @@
 }
 
 .pink-div {
-  border-color: black;
+  border: 2px solid black;
   background-color: pink;
+  padding: 2%;
+}
+
+div > h1 {
+  margin: 0;
+}
+
+div > p {
+  margin: 0;
 }
